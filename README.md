@@ -66,4 +66,4 @@ Output from proxy server:
 
 Eventually the outgoing buffer is filled up and the `writev` call blocks and never recovers.
 
-I've tested this on macOS 10.13.2 with GHC 8.0.2 and 8.2.2. The hang does not occur on Linux as far as I can tell.
+I've tested this on macOS 10.13.2 with GHC 8.0.2 and 8.2.2. The hang does not occur on Linux as far as I can tell, nor when using the non-threaded runtime.
